@@ -1,0 +1,49 @@
+.form-box {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 180%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255,250,205);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Move the form box forward on hover */
+.form-box:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.form-control:focus {
+    border-color: #ff8fab;
+    box-shadow: 0 0 0 0.25rem rgba(255, 143, 171, 0.25);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
+    .form-box {
+        width: 90%;
+        max-width: 95%;
+        padding: 10px;
+    }
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-button .btn {
+    background-color: #ff8fab;
+    border-color: #ff8fab;
+    color: white;
+}
+
+.submit-button .btn:hover {
+    background-color: #fb6f92; /* Darker shade of pink */
+    border-color: #fb6f92;
+}
