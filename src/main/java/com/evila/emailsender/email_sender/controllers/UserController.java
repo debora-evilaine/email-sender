@@ -34,8 +34,9 @@ public class UserController {
         logger.info("Handling /sendemail request");
         String email = user.getEmail();
         String name = user.getName();
-        String body = "Hey there, " + name + "!.\nThanks so much for testing" +
-                "the email sender project!";
+        String body = "Hey there, " + name + "!\nThanks for using the email sender! " +
+                "If you have any questions or concerns, shoot me a message at: https://www.linkedin.com/in/debora-evilaine-dev/" +
+                "\nAlso, don't worry: your email wasn't saved anywhere!\nBye bye!\nBest regards, Débora Sousa.";
         String subject = "THANK YOU, " + name.toUpperCase() + "!";
 
         logger.info("Sending email.");
