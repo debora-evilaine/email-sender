@@ -1,14 +1,14 @@
 <div th:fragment="inputForm">
     <div class="form-box">
-        <form>
+        <form action="/sendemail" modelAttribute="user" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname@gmail.com">
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="yourname@gmail.com">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputName" placeholder="Your Name">
+                <input type="text" class="form-control" id="exampleInputName" name="name" placeholder="Your Name">
             </div>
             <div class="submit-button">
                 <button type="submit" class="btn btn-primary">Submit</button>
